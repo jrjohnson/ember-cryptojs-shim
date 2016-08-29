@@ -1,7 +1,7 @@
 {
   "name": "ember-cryptojs-shim",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "ES6 Shim for CryptoJS in EmberJS",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,11 +11,11 @@
     "start": "ember server",
     "test": "ember try:each"
   },
-  "repository": "",
+  "repository": "https://github.com/jrjohnson/ember-cryptojs-shim",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 4.0"
   },
-  "author": "",
+  "author": "Jonathan Johnson (jon.johnson@ucsf.edu)",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
