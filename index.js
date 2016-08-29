@@ -8,7 +8,7 @@ module.exports = {
     app.import(app.bowerDirectory + '/crypto-js/crypto-js.js');
     app.import('vendor/cryptojs.js', {
       exports: {
-        CryptoJS: ['default']
+        CryptoJS: ['default', 'md5', 'sha1', 'sha256', 'sha512', 'sha3', 'ripemd160']
       }
     });
   }
