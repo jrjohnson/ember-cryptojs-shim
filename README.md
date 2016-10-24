@@ -1,5 +1,6 @@
 # Ember-cryptojs-shim
 [![Build Status](https://travis-ci.org/jrjohnson/ember-cryptojs-shim.svg?branch=master)](https://travis-ci.org/jrjohnson/ember-cryptojs-shim)
+[![Ember Observer Score](https://emberobserver.com/badges/ember-cryptojs-shim.svg)](https://emberobserver.com/addons/ember-cryptojs-shim)
 
 A shim for using [CryptoJS](https://github.com/brix/crypto-js) in your ember apps.
 
