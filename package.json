@@ -63,7 +63,11 @@
     "Base64"
   ],
   "dependencies": {
-    "ember-cli-babel": "^5.1.6"
+    "broccoli-funnel": "^1.1.0",
+    "broccoli-merge-trees": "^1.2.1",
+    "crypto-js": "^3.1.8",
+    "ember-cli-babel": "^5.1.6",
+    "resolve": "^1.1.7"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"

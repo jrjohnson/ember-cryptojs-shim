@@ -1,5 +1,5 @@
 (function() {
-  /* globals define, chartist */
+  /* globals define, CryptoJS */
 
   function generateModule(name, values) {
     define(name, [], function() {

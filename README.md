@@ -36,12 +36,6 @@ You can also import hash methods directly:
 or
 `import SHA3 from 'cryptojs/sha3'`
 
-
-## TODO:
-  - [ ] ES6 Modules for remaining cryptojs components.
-  - [ ] Test has options
-  - [ ] Import from NPM instead of Bower (if anyone knows how to do this I would love to hear about it)
-
 ## For developers
 
 ### Installation

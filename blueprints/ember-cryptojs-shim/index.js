@@ -5,7 +5,8 @@ module.exports = {
     // because ember cli normally expects the format
     // ember generate <entityName> <blueprint>
   },
-  afterInstall: function(options) {
-    return this.addBowerPackageToProject('crypto-js');
+
+  afterInstall: function() {
+    return this.addPackageToProject('crypto-js', '^3.1.0');
   }
 };
