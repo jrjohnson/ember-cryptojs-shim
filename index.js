@@ -1,4 +1,4 @@
-/* jshint node: true */
+/*eslint-env node*/
 'use strict';
 
 var path = require('path');
@@ -8,7 +8,7 @@ var MergeTrees = require('broccoli-merge-trees');
 
 module.exports = {
   name: 'ember-cryptojs-shim',
-  included: function included(app) {
+  included: function included() {
     this._super.included.apply(this, arguments);
 
     var importContext;

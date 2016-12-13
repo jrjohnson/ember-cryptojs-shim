@@ -1,4 +1,4 @@
-/*jshint node:true*/
+/*eslint-env node*/
 module.exports = {
   normalizeEntityName: function() {
     // allows to run ember -g ember-chartist-shim and not blow up
