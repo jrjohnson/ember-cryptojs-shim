@@ -36,6 +36,28 @@ You can also import hash methods directly:
 or
 `import SHA3 from 'cryptojs/sha3'`
 
+#### Keywords
+This addon provides:
+* security
+* crypto
+* Hash
+* MD5
+* SHA1
+* SHA-1
+* SHA256
+* SHA-256
+* RC4
+* Rabbit
+* AES
+* DES
+* PBKDF2
+* HMAC
+* OFB
+* CFB
+* CTR
+* CBC
+* Base64
+
 ## For developers
 
 ### Installation
