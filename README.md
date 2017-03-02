@@ -51,7 +51,7 @@ or
 
 ### Running Tests
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
+* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
@@ -59,4 +59,4 @@ or
 
 * `ember build`
 
-For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
+For more information on using ember-cli, visit [https://ember-cli.com/](http://ember-cli.com/).
