@@ -1,4 +1,6 @@
 # Ember-cryptojs-shim
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/jrjohnson/ember-cryptojs-shim.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/jrjohnson/ember-cryptojs-shim.svg?branch=master)](https://travis-ci.org/jrjohnson/ember-cryptojs-shim)
 [![Ember Observer Score](https://emberobserver.com/badges/ember-cryptojs-shim.svg)](https://emberobserver.com/addons/ember-cryptojs-shim)
 
