@@ -2,26 +2,20 @@
 'use strict';
 
 var path = require('path');
-var resolve = require('resolve');
 var Funnel = require('broccoli-funnel');
 var MergeTrees = require('broccoli-merge-trees');
 
 module.exports = {
   name: 'ember-cryptojs-shim',
-  included: function included() {
+  included(app) {
     this._super.included.apply(this, arguments);
 
-    var importContext;
-    if (this.import) {
-      // support for ember-cli >= 2.7
-      importContext = this;
-    } else {
-      // addon support for ember-cli < 2.7
-      importContext = this._findHostForLegacyEmberCLI();
+    if (typeof app.import !== 'function' && app.app) {
+      app = app.app;
     }
 
-    importContext.import('vendor/crypto-js/crypto-js.js');
-    importContext.import('vendor/cryptojs.js', {
+    app.import('vendor/crypto-js/crypto-js.js');
+    app.import('vendor/cryptojs.js', {
       exports: {
         CryptoJS: [
           'default',
@@ -42,32 +36,14 @@ module.exports = {
     });
   },
 
-  treeForVendor: function(tree) {
-    var cryptojsPath = path.dirname(resolve.sync('crypto-js'));
-    var cryptoJsTree = new Funnel(cryptojsPath, {
+  treeForVendor(vendorTree) {
+    var cryptoJsTree = new Funnel(path.dirname(require.resolve('crypto-js')), {
       files: ['crypto-js.js'],
       destDir: '/crypto-js',
     });
 
-    var trees = [tree, cryptoJsTree];
-
-    return new MergeTrees(trees, {
+    return new MergeTrees([vendorTree, cryptoJsTree], {
       annotation: 'ember-cryptojs-shim: treeForVendor'
     });
   },
-
-  // included from https://git.io/v6F7n
-  // not needed for ember-cli > 2.7
-  _findHostForLegacyEmberCLI: function() {
-    var current = this;
-    var app;
-
-    // Keep iterating upward until we don't have a grandparent.
-    // Has to do this grandparent check because at some point we hit the project.
-    do {
-      app = current.app || app;
-    } while (current.parent.parent && (current = current.parent));
-
-    return app;
-  }
 };
