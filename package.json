@@ -1,6 +1,6 @@
 {
   "name": "ember-cryptojs-shim",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "ES6 Shim for CryptoJS in EmberJS",
   "keywords": [
     "ember-addon",
