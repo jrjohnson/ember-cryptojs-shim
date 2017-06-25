@@ -26,6 +26,7 @@ matrix:
 before_install:
   - if [[ `npm -v` != 5* ]]; then npm install -g npm@5; fi
   - npm --version
+  - npm install -g greenkeeper-lockfile@1
   - npm config set spin false
   - npm install -g phantomjs-prebuilt
   - phantomjs --version
@@ -33,7 +34,13 @@ before_install:
 install:
   - npm install
 
+before_script:
+  - greenkeeper-lockfile-update
+
 script:
   # Usually, it's ok to finish the test scenario without reverting
   #  to the addon's original dependency state, skipping "cleanup".
   - node_modules/.bin/ember try:one $EMBER_TRY_SCENARIO test --skip-cleanup
+
+after_script:
+  - greenkeeper-lockfile-upload
