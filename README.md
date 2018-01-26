@@ -1,4 +1,4 @@
-# Ember-cryptojs-shim
+# ember-cryptojs-shim
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/jrjohnson/ember-cryptojs-shim.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/jrjohnson/ember-cryptojs-shim.svg?branch=master)](https://travis-ci.org/jrjohnson/ember-cryptojs-shim)
@@ -83,4 +83,4 @@ This addon provides:
 
 * `ember build`
 
-For more information on using ember-cli, visit [https://ember-cli.com/](http://ember-cli.com/).
+For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
