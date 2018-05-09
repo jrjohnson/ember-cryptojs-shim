@@ -1,18 +1,23 @@
-# ember-cryptojs-shim
+ember-cryptojs-shim
+==============================================================================
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/jrjohnson/ember-cryptojs-shim.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/jrjohnson/ember-cryptojs-shim.svg?branch=master)](https://travis-ci.org/jrjohnson/ember-cryptojs-shim)
 [![Ember Observer Score](https://emberobserver.com/badges/ember-cryptojs-shim.svg)](https://emberobserver.com/addons/ember-cryptojs-shim)
 
+
 A shim for using [CryptoJS](https://github.com/brix/crypto-js) in your ember apps.
 
+Installation
+------------------------------------------------------------------------------
 
-## Installation
 ```
 ember install ember-cryptojs-shim
 ```
 
-## Usage
+Usage
+------------------------------------------------------------------------------
+
 Import and use CryptoJS as an ES6 module:
 
 ```javascript
@@ -60,11 +65,14 @@ This addon provides:
 * CBC
 * Base64
 
-## For developers
+
+Contributing
+------------------------------------------------------------------------------
 
 ### Installation
 
-* `git clone` this repository
+* `git clone <repository-url>`
+* `cd my-addon`
 * `npm install`
 * `bower install`
 
@@ -74,13 +82,26 @@ This addon provides:
 * Visit your app at http://localhost:4200.
 
 ### Running Tests
+### Linting
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+* `npm run lint:js`
+* `npm run lint:js -- --fix`
+
+### Running tests
+
+* `ember test` – Runs the test suite on the current Ember version
+* `ember test --server` – Runs the test suite in "watch mode"
+* `ember try:each` – Runs the test suite against multiple Ember versions
 
 ### Building
+### Running the dummy application
 
-* `ember build`
+* `ember serve`
+* Visit the dummy application at [http://localhost:4200](http://localhost:4200).
 
 For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+
+License
+------------------------------------------------------------------------------
+
+This project is licensed under the [MIT License](LICENSE.md).
